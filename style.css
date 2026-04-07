@@ -1,1 +1,43 @@
+:root {
+    --coffee-dark: #ac6b60;
+    --coffee-medium: #cf4a33;
+    --coffee-light: #359421;
+    --coffee-accent: #5962b4;
+    --coffee-cream: #88913a;
+    --coffee-gold: #ffbac0;
+    --text-dark: #c33feb;
+    --text-light: #2df826;
 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--coffee-cream);
+    color: var(--text-dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+header{
+    background: #a3b9e9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    transition: all 0.4s ease;
+
+}
