@@ -1,12 +1,12 @@
 :root {
-    --coffee-dark: #ac6b60;
-    --coffee-medium: #cf4a33;
-    --coffee-light: #359421;
-    --coffee-accent: #5962b4;
-    --coffee-cream: #88913a;
-    --coffee-gold: #ffbac0;
-    --text-dark: #c33feb;
-    --text-light: #2df826;
+    --coffee-dark: #3e2723;
+    --coffee-medium: #6f4e37;
+    --coffee-light: #c4a484;
+    --coffee-accent: #d2b48c;
+    --coffee-cream: #f5f5dc;
+    --coffee-gold: #d4af37;
+    --text-dark: #2c2416;
+    --text-light: #f3f3f3;
 
 }
 
@@ -31,8 +31,9 @@ body {
     margin:  0 auto;
 }
 
+/* header un podziņi  */
 header{
-    background: #a3b9e9;
+    background: #161515;
     position: fixed;
     width: 100%;
     top: 0;
@@ -40,4 +41,47 @@ header{
     padding: 10px 0;
     transition: all 0.4s ease;
 
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    color: var(--coffee-gold);
+    font-size: 28px;
+
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--coffee-medium);
+    letter-spacing: 1px;
+}
+
+.logo-text span{
+    color: var(--coffee-gold);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--coffee-medium);
+    font-weight: 600;
 }
