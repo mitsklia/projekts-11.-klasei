@@ -1,11 +1,11 @@
 :root {
-    --coffee-dark: #3e2723;
-    --coffee-medium: #6f4e37;
-    --coffee-light: #c4a484;
-    --coffee-accent: #d2b48c;
+    --coffee-dark: #9AB17A;
+    --coffee-medium: #C3CC9B;
+    --coffee-light: #E4DFB5;
+    --coffee-accent: #79AE6F;
     --coffee-cream: #f5f5dc;
-    --coffee-gold: #d4af37;
-    --text-dark: #2c2416;
+    --coffee-gold: #F2EDC2;
+    --text-dark: #546B41;
     --text-light: #f3f3f3;
 
 }
@@ -265,14 +265,118 @@ max-width: 700px;
 
 .section-subtitle{
     font-size: 20px;
-    color: var(--coffee-gold);
+    color: var(--coffee-dark);
     margin-bottom: 15px;
 }
 
 .section-title{
     font-size: 42px;
-    color: var(--coffee-gold);
+    color: var(--coffee-dark);
     margin-top: 20px;
     position: relative;
     display: inline-block;
+}
+
+.section-title::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--coffee-dark);
+}
+
+.section-desc{
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.product-card{
+    background: var(--coffee-dark);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    top: 0;
+}
+
+.product-card:hover{
+    transform: translateY(-10px);
+    border: 2px solid var(--coffee-gold);
+}
+
+.product-img{
+    height: 280px;
+    overflow: hidden;
+}
+
+.product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img img{
+    transform: scale(1.05);
+}
+
+.product-info{
+    padding: 25px;
+position: relative;
+}
+
+.product-tag{
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    background: var(--coffee-gold);
+    color: black;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.product-title{
+    font-size: 24px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.product-desc{
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.product-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--coffee-gold);
+}
+
+.rating{
+    color: var(--coffee-gold);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 0,5px;
 }
