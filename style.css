@@ -2,7 +2,7 @@
     --coffee-dark: #9AB17A;
     --coffee-medium: #C3CC9B;
     --coffee-light: #E4DFB5;
-    --coffee-accent: #79AE6F;
+    --coffee-accent: #DCCCAC;
     --coffee-cream: #f5f5dc;
     --coffee-gold: #F2EDC2;
     --text-dark: #546B41;
@@ -186,7 +186,7 @@ nav a:hover:after{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #9dab41 10%, #58630e 60%);
+    background: linear-gradient(135deg, #546B41 10%, #99AD7A 60%);
     z-index: -1;
 }
 
@@ -379,4 +379,102 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     letter-spacing: 0,5px;
+}
+
+
+/* footer */
+
+footer{
+    background: var(--coffee-dark);
+    color: var(--text-light);
+    padding: 70px 0 30px;
+    position: relative;
+    border-top: 4px solid var(--coffee-gold);
+    border;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-column h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--coffee-gold);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li{
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: var(--coffee-accent);
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+
+.footer-links a:hover {
+    color: var(--coffee-gold);
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(225, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--coffee-cream);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--coffee-gold);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--coffee-accent);
+    font-size: 15px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
