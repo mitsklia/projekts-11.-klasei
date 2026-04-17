@@ -17,3 +17,11 @@ productCards.forEach(card => {
         this.style.transform = 'translateY(0)';
     });
 });
+
+
+const datums = new Date();
+document.querySelector("h4").innerHTML = datums ;
+
+const d = new Date();
+otr.innerHTML = d.getDate() + "." +
+ (d.getMonth() + 1) + "." + d.getFullYear() + ".";
