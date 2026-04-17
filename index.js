@@ -1,11 +1,10 @@
-document.querySelector('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e)) {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')),
-        scrollIntoView({
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
-    };
+    });
 });
 
 const productCards = document.querySelectorAll('.product-card');
@@ -14,7 +13,7 @@ productCards.forEach(card => {
         this.style.transform = 'translateY(-15px)';
     });
 
-    card.addEventListener('mouseleave', function(){
+    card.addEventListener('mouseleave', function() {
         this.style.transform = 'translateY(0)';
     });
 });
