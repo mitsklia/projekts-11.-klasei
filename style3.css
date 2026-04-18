@@ -1,21 +1,23 @@
         body {
             font-family: Georgia, serif;
             background: #f5f1dc;
-            display: flex;
             justify-content: center;
-            align-items: center;
             height: 100vh;
             margin: 0;
+                display: flex;
+    flex-direction: column;
+    align-items: center;
         }
 
         .game-box {
+            width: 300px;
             background: #8ea06a;
+            color: white;
             padding: 30px;
             border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
             text-align: center;
-            width: 350px;
-            color: white;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            padding: 50px;
         }
 
         h1 {
@@ -61,3 +63,37 @@
             color: white;
             box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
         }
+
+
+        .box {
+            width: 420px;
+            background: #8ea06a;
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 16px;
+            margin-top: 20px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 8px 0;
+        }
+
+.top-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
