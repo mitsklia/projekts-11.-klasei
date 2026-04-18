@@ -25,3 +25,15 @@ document.querySelector("h4").innerHTML = datums ;
 const d = new Date();
 otr.innerHTML = d.getDate() + "." +
  (d.getMonth() + 1) + "." + d.getFullYear() + ".";
+
+
+
+ function poga() {
+    const ievaditieDati = document.getElementById("ievade").value 
+    const ievaditaKrasa = document.getElementById("krasa").value
+    if(document.getElementById("atzime").checked) {
+        document.getElementById("izvade").style.color = ievaditaKrasa
+    } else{
+        document.getElementById("izvade").style.color = "black"
+    }
+    document.getElementById("izvade").innerHTML = "Sveiki, " + ievaditieDati + "!"}
