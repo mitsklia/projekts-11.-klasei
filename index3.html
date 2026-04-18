@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minēšanas spēle</title>
+    <title>lapa nr 2.</title>
 </head>
 <link rel="stylesheet" href="style3.css">
 <body>
+    <div class="top-link">
+    <a href="index.html" class="home-button"> Atgriezties mājaslapā</a>
+</div>
+
     <div class="game-box">
         <h1>Minēšanas spēle</h1>
-        <p>Uzmini skaitli no 1 līdz 10</p>
+        <p>Uzmini skaitli no 1 līdz 10, lai dabūt 5% atlaidi uz pirmo nodarbību!<br>
+            (Atlaide attiecas uz jebkuru pulciņu)</p>
         <input type="number" id="guess" min="1" max="10">
         <br>
         <button onclick="checkGuess()">Pārbaudīt</button>
-                <a href="index.html">Mājaslapa</a>
         <p id="message"></p>
     </div>
+
+ <div class="box">
+        <h1>Interešu pulciņi Salaspilī</h1>
+        <p>Nospiediet pogu, lai nejauši apskatītu kādu pulciņu</p>
+        <button onclick="showClub()">Parādīt pulciņu</button>
+
+        <div class="card" id="clubCard">
+            <h2>Pulciņa nosaukums</h2>
+            <p>Kategorija</p>
+            <p>Tālrunis</p>
+        </div>
+    </div>
+
         <script src="lapa2.js"></script>
 </body>
 </html>
